@@ -51,7 +51,7 @@
 						<div class="inner">
 							<header>
 								<h1>Welcome.</h1>
-								<p>Please pick a theme below to suit your mood. You can also learn more <a href="about.html">about me</a> or look at my <a href="exhibits.html">exhibits </a>listing.</p>
+								<p>Please pick a theme below to suit your mood. You can also look at my <a href="exhibits.html">exhibits</a> listing or learn more <a href="about.html">about me</a>.</p>
 							</header>
 							<section class="tiles">
 								<article class="style1"> <!-- FRAGMENTED --> 
@@ -195,7 +195,7 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" onsubmit="sendEmail(); return false;"> 
+								<form method="post" onsubmit="sendEmail(); return false;" id="contact-form"> 
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" required/>
@@ -210,6 +210,8 @@
 									<ul class="actions">
 										<li><input type="submit" value="Send" class="primary" /></li>
 									</ul>
+									<!-- Inline success message -->
+									<div id="form-status" style="margin-top:10px;color:green;"></div>
 								</form>
 							</section>
 							<!-- <section>

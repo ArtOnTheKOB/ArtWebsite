@@ -10,15 +10,21 @@
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
       message: document.getElementById("message").value
-    };
+    };	
 
     emailjs
       .send("service_74gcpyb", "template_cdhrfwj", params)
-      .then(() => {
-        alert("Message sent successfully!");
+      .then((response) => {
+		const statusDiv = document.getElementById("form-status");
+        if (statusDiv) {
+			statusDiv.textContent = "Message sent successfully!";
+			statusDiv.style.color = "green";
+			document.getElementById("contact-form").reset();
+		}
       })
       .catch((err) => {
         console.error("EmailJS error:", err);
-        alert("Failed to send message. Check console for details.");
+        statusDiv.textContent = "Failed to send message. Please try again.";
+		statusDiv.style.color = "red";
       });
   }
