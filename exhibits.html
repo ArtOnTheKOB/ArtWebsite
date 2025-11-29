@@ -189,15 +189,11 @@
 			}
 			
 			@media (max-width: 600px) {
-			  .exhibit-images {
-				justify-content: center;
-			  }
-
-			  .exhibit-images img {
-				width: 45%;     /* 2 images per row on small screens */
-				height: 150px;
-			  }
+				.exhibit-images img {
+				width: 100%;   /* make single images scale properly on mobile */
+				height: auto;  /* keep aspect ratio */
 			}
+			
 		</style>
 
 
