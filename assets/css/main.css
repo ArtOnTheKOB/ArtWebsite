@@ -3367,3 +3367,8 @@ input, select, textarea {
     font-style: italic;
     color: #555;
   }
+
+  .small-painting img {
+	height: 320px;
+	width: auto;
+  }
