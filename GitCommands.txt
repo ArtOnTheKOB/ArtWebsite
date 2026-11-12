@@ -1,3 +1,4 @@
+cd C:/Users/kaira/Dropbox/K-ArtWebsite-html5up-phantom
 git add .
 git commit -m "Update site"
 git push
